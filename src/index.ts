@@ -15,7 +15,7 @@ import subjectRoutes from "./routes/subjectRoutes";
 import scheduleRoutes from "./routes/scheduleRoutes";
 dotenv.config();
 
-const app: Application = express();
+export const app: Application = express();
 const port = process.env.PORT || 8000;
 
 app.use(config.DEV_ENV === "PROD" ? cors(corsOptions) : cors());
