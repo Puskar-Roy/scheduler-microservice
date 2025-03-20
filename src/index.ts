@@ -15,6 +15,7 @@ import subjectRoutes from "./routes/subjectRoutes";
 import scheduleRoutes from "./routes/scheduleRoutes";
 dotenv.config();
 
+
 export const app: Application = express();
 const port = process.env.PORT || 8000;
 
